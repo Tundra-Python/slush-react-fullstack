@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><?? humanizedAppName ?></title>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <!-- angular and ui-router files -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.11/angular-ui-router.min.js"></script>
+
+  <!-- ngReact NEED TO FIX THIS WITH A REAL PATH-->
+  <script src="ngReact/ngReact.min.js"></script>
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./app/styles/main.css">
+</head>
+<body ng-app="app">
+  <div controller="app-controller">
+    <nav-ng></nav-ng>
+    <banner-ng></banner-ng>
+    <div ui-view=""></div>
+    <footer-ng></footer-ng>
+  </div>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <script src='./app/build/bundle.js'></script>
+</body>
+</html>
